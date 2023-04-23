@@ -1,0 +1,374 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* Header */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__logo img {
+	width: 10%;
+	height: 10%;
+	height: auto;
+}
+
+.header__nav {
+	margin-left: 2rem;
+}
+
+.nav__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.nav__item {
+	margin-right: 2rem;
+}
+
+.nav__item:last-child {
+	margin-right: 0;
+}
+
+.nav__item a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 500;
+	font-size: 1.2rem;
+	transition: color 0.2s ease-in-out;
+}
+
+.nav__item a:hover {
+	color: #8d8c8c;
+}
+
+/* sec1 */
+.sec1 {
+	background: gray;
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	align-items: center;
+}
+.sec1__content {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+}
+.sec1__title {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+.sec1__text {
+	margin-bottom: 30px;
+}
+.sec1__cta {
+	display: inline-block;
+	background-color: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* viruses */
+.viruses {
+	padding: 50px 0;
+	background-color: #f7f7f7;
+}
+.viruses__text {
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+	font-style: italic;
+}
+
+/* virus */
+.virus {
+	background-color: #f5f5f5;
+	padding: 60px 0;
+}
+
+.virus__title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.virus__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.virus__item {
+	margin: 20px;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+}
+
+.virus__item:hover {
+	transform: translateY(-10px);
+}
+
+.virus__image {
+	width: 100%;
+	max-width: 200px;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+.virus__name {
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+/* facts */
+.section__facts {
+	background-color: #f0f0f0;
+	padding: 50px 0;
+}
+
+.section__title {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.facts {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fact {
+	width: calc(25% - 20px);
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+	overflow: hidden;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.fact:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.fact__image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.fact__title {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+.fact__text {
+	margin: 0 20px 20px;
+}
+
+.section__prevention {
+	background-color: #ccc;
+	padding: 50px 0;
+}
+
+/* prevention */
+.prevention {
+	display: flex;
+	justify-content: space-between;
+}
+
+.prevention__step {
+	width: calc(50% - 20px);
+	border: 1px solid #999;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+	overflow: hidden;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.prevention__step:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.prevention__image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.prevention__title {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+.prevention__text {
+	margin: 0 20px 20px;
+}
+
+/* history */
+
+.history-viruses {
+	background-color: #f0f0f0;
+	padding: 50px 0;
+}
+
+.history-viruses__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.history-viruses__item {
+	width: calc(33.33% - 20px);
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+	overflow: hidden;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.history-viruses__item:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.history-viruses__item-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+.history-viruses__item-text {
+	margin: 0 20px 20px;
+}
+/* Team */
+.Team {
+	background-color: #f8f8f8;
+	padding: 80px 0;
+}
+
+.team__title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+.team__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.team__item {
+	margin: 20px;
+	text-align: center;
+	max-width: 300px;
+}
+
+.team__member {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+}
+
+.team__image {
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.team__name {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.team__position {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+/* Media */
+@media screen and (max-width: 768px) {
+	.virus__item {
+		width: 100%;
+	}
+}
+@media (max-width: 767px) {
+	.team__item {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.prevention__step {
+		flex-basis: 100%;
+	}
+}
+
+/* Footer */
+.footer {
+	background-color: #222;
+	color: #fff;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.footer__contact {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.footer__contact a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Hover for Header */
+.menu__link:hover {
+	position: relative;
+}
+
+.menu__link:hover::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #333;
+	bottom: 0;
+	left: 0;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.menu__link:hover::before {
+	transform: scaleX(1);
+}
